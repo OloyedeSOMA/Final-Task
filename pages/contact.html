@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script  src="../scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="firstContainer">
+    <header class="headerSection">
+        <nav class="navSection">
+            <ul class="navlist">
+                <li class="navitem firstchild">Welcome</li>
+                <li class="navitem link"><a class="anchor" href="../index.html">Home</a></li>
+                <li class="navitem link"><a class="anchor" href="../shop.html">Shop</a></li>
+                <li class="navitem link"><a class="anchor" href="./about.html">About Us</a></li>
+                <!-- <li class="navitem search link">
+                    <input type="text"  placeholder="search" >
+                </li> -->
+                
+                <li class="contact navitem link" ><a class="anchor" href="contact.html">Contact Us</a></li>
+                <li><i class="fa-solid fa-magnifying-glass searchIcon"></i></li>
+                <li class="navitem"><i class="fa-solid fa-cart-shopping"></i></li>
+                <li class="menuBarIcon" onclick="showSideBar();"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                
+            </ul>
+            <ul class="sidebar hidden" >
+                <li onclick="closeSideBar();"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a class="anchor" href="../index.html">Home</a></li>
+                <li><a class="anchor" href="../shop.html">Shop</a></li>
+                <li class="search ">
+                    <input type="text"  placeholder="search">
+                    
+                </li>
+                <li><a class="anchor" href="contact.html">Contact Us</a></li>
+                
+                <li><a class="anchor" href="./about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="herosection">
+        <!-- <div class="heroimageone">
+            <img src="image/ei_1723098322243-removebg.png" height="500px" width="420px"/>
+        </div>  -->
+        <div class="herotext">
+            <h1>Contact Soma's Fashion Hub</h1>
+            <p>Do you have a complaint? or want to make an inquiry or want to state out an observation? Send a message to us and we will respond in a jiffy. Thanks!</p>
+            
+        </div>
+        <div class="heroimagetwo">
+            <img src="../image/pexels-rdne-4911253.jpg" />
+        </div>
+    </div>
+</div>
+
+<!--contact form section start-->
+
+<h1 class="text-center">Get In Touch</h1>
+<div>
+<form class="row g-3 p-5"style="max-width: 100%;">
+    <div class="col-md-6">
+    <label for="inputEmail4" class="form-label" >Name</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="Please input your first name and last name">
+    </div>
+    <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Message</label>
+    </div>
+    <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+        <option selected>Choose...</option>
+        <option>...</option>
+    </select>
+    </div>
+    <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+        Would you like to receive promotional contents from us and also subscribe to our newsletter?
+        </label>
+    </div>
+    </div>
+    <div class="col-12">
+    <button type="submit" class="btn bg-dark text-light">Send Message</button>
+    </div>
+</form>
+</div> 
+<!--contact form section end-->
+
+<!--writeup that links to shop page-->
+<div class="d-flex flex-column flex-md-row flex-lg-row justify-content-between align-items-center shopLink">
+    <div class="container mt-5 .bg-success text-center">
+      <h1 class=".bg-success text-center">Check Out Our New Stock Products.</h1>
+      <p>At SFH, we are always on our toes to satisfy our customers. In that case, we decided to bring in new fashionable stock products that entails good fashion  culture,  and providing something for everyone!</p>
+      <a href="../shop.html"><button type="button" class="btn bg-dark text-light">Take A Peep</button></a>
+    </div>
+
+    <div>
+      <img src="../image/pexels-addy-bronzzz-264850064-19461556.jpg" class="img-thumbnail" style="height:300px;">
+    </div>
+</div>  
+<!--writeup that links to shop page ends-->
+<br/>
+<br/>
+<br/>
+<!--Address section start-->
+<h2 class="text-center"> Our Address</h2>
+<div class="d-flex justify-content-center">
+<div class="card  text-center" style="width:400px;">
+    <img src="../image/pexels-vvs-440853-5758953.jpg" class="card-img-top align-self-center" alt="...">
+    <div class="card-body">
+      <p class="card-text">Victoria Island Block 3.</p>
+      <p class="card-text">Lagos,Nigeria.</p>
+      <a class="anchor" href="https://maps.app.goo.gl/6utKtAaTFLex3FAN7"><i class="fa-solid fa-map map"></i></a>
+    </div>
+</div>
+</div>
+
+
+
+<footer class="foot">
+    <div class="footer_links">
+        <div class="f_sectionone">
+            <h2>Quick Links</h2>
+            <a class="anchor" href="#"><h3>Home</h3></a>
+            <a class="anchor" href="#"><h3>Products</h3></a>
+            <a class="anchor" href="#"><h3>Contact Us</h3></a>
+            <a class="anchor" href="#"><h3>About Us</h3></a>
+            <a class="anchor" href="#"><h3>Cart</h3></a>
+            
+        </div>
+
+        <div class="f_sectiontwo">
+            <h2>Socials Link</h2>
+            <a class="anchor" href="#"><h3>Watsapp</h3></a>
+            <a class="anchor" href="#"><h3>Facebook</h3></a>
+            <a class="anchor" href="#"><h3>Github</h3></a>
+            <a class="anchor" href="#"><h3>Instagram</h3></a>
+            <a class="anchor" href="#"><h3>Discord</h3></a>
+        </div>
+    </div>
+    <h1 class="copyright" align="center">&copy;Copyright Soma's Fashion Hub</h1>
+        
+    
+</footer>
+<!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
